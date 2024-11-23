@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnc7iorgws3t"]
+
+[ext_resource type="Texture2D" uid="uid://d2f5do7xvtqck" path="res://assets/sprites/dirt.png" id="1_sdx4b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2l8ye"]
+size = Vector2(64, 64)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2l8ye")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sdx4b")
